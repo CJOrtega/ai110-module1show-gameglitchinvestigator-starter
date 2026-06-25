@@ -31,22 +31,26 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📸 Demo Walkthrough
 
-Describe your fixed game in numbered steps so a reader can follow along without watching a video:
-
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
-
-**Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
+1. User opens the app on Normal difficulty (range 1–100, 8 attempts allowed). The secret number is 57.
+2. User enters a guess of **40** → game returns "📈 Go HIGHER!" and score decreases by 5.
+3. User enters a guess of **70** → game returns "📉 Go LOWER!" and score decreases by 5 again.
+4. User enters a guess of **57** → game returns "🎉 Correct!" Score updates with a win bonus and balloons appear.
+5. Game displays "You won! The secret was 57. Final score: X" and stops accepting guesses.
+6. User clicks **New Game** → status resets to "playing", a new secret number is generated, and the game begins again.
 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+============================================================= test session starts =============================================================
+platform darwin -- Python 3.14.4, pytest-9.1.1, pluggy-1.6.0
+rootdir: /Users/cristopherortega/workspace/corte/AI110/ai110-module1show-gameglitchinvestigator-starter
+configfile: pytest.ini
+plugins: anyio-4.14.0
+collected 7 items                                                                                                                             
+
+tests/test_game_logic.py .......                                                                                                        [100%]
+
+============================================================== 7 passed in 0.01s ==============================================================
 ```
 
 ## 🚀 Stretch Features
